@@ -1,0 +1,89 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
+/* ヘッダー */
+/* トップページ */
+.stock_wrapper{
+  height: 3em;
+  width: 700px;
+  margin: auto;
+  text-decoration: none;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.btn{
+  display: inline-block;
+  text-align: center;
+  margin-right: 0.4em;
+  padding: 0.4em 1.5em;
+  font-size: 0.7em;
+  border-radius: 3px;
+}
+.bg_pink {
+  background-color: #ffb7ff;
+}
+.bg_green {
+  background-color: #b7ffdb;
+}
+.report {
+  width: 9.4em;
+  background-color: #ebebeb;
+  font-size: 0.6em;
+}
+.stock_left,.infotag {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+.stock_right {
+  padding: 0.4em 1.5em;
+  font-size: 0.8em;
+  border: 1px solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin-right: 1em;
+}
+.sum_right:hover {
+  color: #fff;
+  background: #ffffa3;
+}
+.sum_display {
+  margin-left: 1em;  
+}
+/* フッター */
