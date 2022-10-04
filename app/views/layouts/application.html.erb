@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <header class="header">
+      <h2 class="grid-6"><a href="/">在庫リスト</a></h2>
+      <% if user_signed_in? %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "ログイン", new_user_session_path %>
+        <%= link_to "新規登録", new_user_registration_path %>
+      <% end %>
+    </header>
     <%= yield %>
+    <footer>
+    <p>
+        Copyright StockList 2022.
+    </p>
+    </footer>
   </body>
 </html>

@@ -37,6 +37,4 @@
 | ------------------- | ------- | ---------------- |
 | reportname          | string  | null: false      |
 | deadline            | integer | null: false      |
-
-### Association
-- belongs_to :detail
+- has_many :reports
