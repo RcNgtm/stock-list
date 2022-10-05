@@ -1,2 +1,14 @@
-<p><%= report.product %>/<%= report.detail.reportname %></p>
-<%= link_to "更新する", stock_path(report.id) %>
+<div class='stock_wrapper'>
+  <div class='stock_left'>
+    <div class='innner_left'>
+      <span class='<%= product_color(report) %> btn'><%= report.product %></span>
+      <span class='report btn'><%= report.detail.reportname %></span>
+    </div>
+    <div class='innner_right'>
+      現在の在庫数：<%= @sum_stocks[report.id] %>
+    </div>
+  </div>
+  <div class='stock_right'>
+    <%= link_to "更新する", stock_path(report.id)%>
+  </div>
+</div>

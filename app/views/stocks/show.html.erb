@@ -1,0 +1,23 @@
+<div class='form_wrapper'>
+  <div>
+    <span class='<%= product_color(@report) %> btn'><%= @report.product %></span>
+    <span class='report btn'><%= @report.detail.reportname %></span>
+  </div>
+  <div>
+    現在の在庫数：<%= @sum_stocks[@report.id] %>
+  </div>
+  <%= form_with model: @stock, local: true, class:'input_form' do |f| %>
+    <div class='form'>
+      <%= f.label :moveday, "変動日" %>
+      <%= f.date_field :movedate, autofocus: true %>
+    </div>
+    <div class='form'>
+      <%= f.label :number, "変動数" %>
+      <%= f.number_field :num, autofocus: true %>
+    </div>
+      <%= f.hidden_field :report_id, value: @report.id %>
+    <div class='form'>
+      <%= f.submit "入力する" %>
+    </div>
+  <% end %>
+</div>
