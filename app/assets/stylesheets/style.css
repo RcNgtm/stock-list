@@ -17,6 +17,7 @@ div {
 
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #6f5240;
 }
 
 li {
@@ -53,20 +54,18 @@ a {
   margin-right: 0.4em;
   padding: 0.4em 1.5em;
   font-size: 0.7em;
-  border-radius: 3px;
 }
 .bg_pink {
-  background-color: #ffb7ff;
+  background-color: #f8d6f8;
 }
 .bg_green {
-  background-color: #b7ffdb;
+  background-color: #cffae5;
 }
 .report {
-  background-color: #ebebeb;
+  background-color: #c2b2a8;
   font-size: 0.6em;
 }
 .stock_wrapper{
-  color: #3b4043;
   height: 3em;
   width: 40em;
   margin: auto;
@@ -82,26 +81,26 @@ a {
   justify-content:space-between;
   align-items: center;
 }
-.innner_left {
+.inner_left {
   display: flex;
   align-items: center;
   margin-left: 1em;
   width: 12em;
 }
 .inner_right {
-  
+  color: #6f5240;
 }
 .stock_right {
   padding: 0.4em 1.5em;
   font-size: 0.7em;
-  border: 2px solid #b79986;
-  border-radius: 3px;
   transition: 0.4s ease;
   margin-right: 1em;
+  background: #fffbf9;
+  border: 2px solid #c9ac99;  
 }
 .stock_right:hover {
-  background: #b79986;
   border: none;
+  background: #c9ac99;
 }
 
 /* 入力画面 */
