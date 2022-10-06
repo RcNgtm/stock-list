@@ -1,0 +1,14 @@
+<div class='stock_wrapper'>
+  <div class='stock_left'>
+    <div class='inner_left'>
+      <span class='<%= product_color(report) %> btn'><%= report.product %></span>
+      <span class='report btn'><%= report.detail.reportname %></span>
+    </div>
+    <div class='inner_right'>
+      現在の在庫数：<%= @sum_stocks[report.id] %>
+    </div>
+  </div>
+  <div class='stock_right'>
+    <%= link_to "入力する", stock_path(report.id)%>
+  </div>
+</div>
