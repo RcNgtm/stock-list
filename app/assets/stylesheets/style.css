@@ -65,10 +65,13 @@ a {
   background-color: #c2b2a8;
   font-size: 0.6em;
 }
-.stock_wrapper{
-  height: 3em;
+.inner {
   width: 40em;
   margin: auto;
+}
+
+.stock_wrapper {
+  height: 3em;
   text-decoration: none;
   user-select: none;
   display: flex;
