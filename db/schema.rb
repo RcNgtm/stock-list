@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_02_162806) do
+ActiveRecord::Schema.define(version: 2022_10_10_134614) do
 
   create_table "details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "reportname", null: false
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 2022_10_02_162806) do
     t.date "movedate", null: false
     t.integer "num", null: false
     t.bigint "user_id", null: false
+    t.bigint "report_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "report_id", null: false
     t.index ["report_id"], name: "index_stocks_on_report_id"
     t.index ["user_id"], name: "index_stocks_on_user_id"
   end
