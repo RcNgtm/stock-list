@@ -7,6 +7,11 @@
 # URL
 
 # テスト用アカウント
+email:
+test_1@test.ad
+
+pw:
+test1test1
 
 # 利用方法
 ① ログイン（ログイン必須の仕様となっています。）
@@ -45,18 +50,25 @@
 [![Image from Gyazo](https://i.gyazo.com/54c986bbabeb89c0883aeed2de82adde.gif)](https://gyazo.com/54c986bbabeb89c0883aeed2de82adde)
 
 
-# 実装予定の機能
-・増減数の編集機能
+# 実装希望の機能
+・管理者のみがアクセスできるページ（帳票の種類、帳票の情報、ユーザー登録画面）の作成と遷移の設定
 
-・帳票の種類、帳票の情報、ユーザー登録画面を作成し、管理者のみがアクセスできるように設定
+・１種類づつ数値の登録を行っている仕様を、一括登録できる機能
 
-・現在１種類づつ数値の登録を行っている仕様を、一括登録できる機能
+・カレンダー形式で、在庫変動を一覧化
+
+・一覧をCSVで出力できる機能
+
+・在庫数が基準以下になるとアラートを出す
+
+# 現在取り組んでいる問題
+・在庫変動一覧の実装：Stocksからを:movedateと:report_idでsumした結果の表示について。Rubyでは複合主キーが推奨されていないようで、方法を模索中。
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/38df394e8d033f20322317a77fe84a39.png)](https://gyazo.com/38df394e8d033f20322317a77fe84a39)
 
 # 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/7b28b690bc7d409a2ab5a104d5d0f4df.png)](https://gyazo.com/7b28b690bc7d409a2ab5a104d5d0f4df)
+[![Image from Gyazo](https://i.gyazo.com/4374c898ab577a9ca6a307d24eaf6f3f.png)](https://gyazo.com/4374c898ab577a9ca6a307d24eaf6f3f)
 
 
 # 開発環境
@@ -65,7 +77,7 @@ Ruby on Rails
 # ローカルでの動作方法
 
 # 工夫したポイント
-
+現在の在庫数がわかりやすい点。
 
 
 # テーブル設計
