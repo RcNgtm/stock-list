@@ -39,7 +39,9 @@
 [要件を定義したシート](https://docs.google.com/spreadsheets/d/12HZikHPaOe1PTmnx8pEd-tpG2kAiMrl2KpEyROhfkZw/edit?usp=sharing)
 
 # 実装した機能についての画像やGIFおよびその説明
-一覧画面で変更したい在庫数の入力するを押下し、日付と変動数を入力すると一覧画面に戻り、現在の在庫数に反映される。∑
+
+一覧画面で変更したい在庫数の入力するを押下し、日付と変動数を入力すると一覧画面に戻り、現在の在庫数に反映される。
+
 [![Image from Gyazo](https://i.gyazo.com/54c986bbabeb89c0883aeed2de82adde.gif)](https://gyazo.com/54c986bbabeb89c0883aeed2de82adde)
 
 
