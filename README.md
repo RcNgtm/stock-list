@@ -5,6 +5,7 @@
 使用数を入力することで、現在の在庫数を把握することができるアプリケーション
 
 # URL
+https://stock-list-app.herokuapp.com/
 
 # テスト用アカウント
 email:
