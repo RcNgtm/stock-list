@@ -6,18 +6,26 @@
   <div>
     現在の在庫数：<%= @sum_stocks[@report.id] %>
   </div>
-  <%= form_with model: @stock, local: true, class:'input_form' do |f| %>
-    <div class='form'>
-      <%= f.label :moveday, "変動日" %>
-      <%= f.date_field :movedate, autofocus: true %>
-    </div>
-    <div class='form'>
-      <%= f.label :number, "変動数" %>
-      <%= f.number_field :num, autofocus: true %>
-    </div>
-      <%= f.hidden_field :report_id, value: @report.id %>
-    <div class='form'>
-      <%= f.submit "保存する",class: 'stock_right' %>
-    </div>
-  <% end %>
+    <%= form_with model: @stock, local: true, class:'input_form' do |f| %>
+      <div class='form'>
+        <%= f.label :moveday, "変動日" ,class: 'form_left'%>
+        <%= f.date_field :movedate, autofocus: true %>
+      </div>
+      <div class='form'>
+        <%= f.label :number, "変動数" ,class: 'form_left'%>
+        <%= f.number_field :num, autofocus: true, class:'form_right_upper'%>
+      </div>
+      <div class= 'form_right'>数値は半角で入力してください</div>
+        <%= f.hidden_field :report_id, value: @report.id %>
+      <div class='submit_btn'>
+        <%= f.submit "保存する",class: 'stock_right' %>
+      </div>
+    <% end %>
+
+  <%# <div>月別変動数
+    <%= month_calendar do |date| %>
+      <%# <%= date.day %><br>
+      <%# 変動数入れたい %>
+    <%# <% end %> 
+  <%# </div> %>
 </div>

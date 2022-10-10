@@ -65,10 +65,13 @@ a {
   background-color: #c2b2a8;
   font-size: 0.6em;
 }
-.stock_wrapper{
-  height: 3em;
+.inner {
   width: 40em;
   margin: auto;
+}
+
+.stock_wrapper {
+  height: 3em;
   text-decoration: none;
   user-select: none;
   display: flex;
@@ -119,5 +122,23 @@ a {
 
 .form {
   margin: 0.7em 0;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.form_left{
+  margin-right: 1em;  
+}
+.form_right_upper{
+  position:relative;
+}
+.form_right {
+}
+.submit_btn {
+  margin-top: 1em;
+}
+/* devise */
+.field {
+  margin: 1em 0;
 }
 /* フッター */
