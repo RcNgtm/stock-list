@@ -44,6 +44,8 @@ test1test1
 # 洗い出した要件
 [要件を定義したシート](https://docs.google.com/spreadsheets/d/12HZikHPaOe1PTmnx8pEd-tpG2kAiMrl2KpEyROhfkZw/edit?usp=sharing)
 
+[洗い出した要件②](https://docs.google.com/presentation/d/1YsgQMyQqlUw5o7HtIiUWMPlc3ExAU4r7tj6sSn7eVWM/edit?usp=sharing)
+
 # 実装した機能についての画像やGIFおよびその説明
 
 一覧画面で変更したい在庫数の入力するを押下し、日付と変動数を入力すると一覧画面に戻り、現在の在庫数に反映される。
@@ -54,7 +56,7 @@ test1test1
 # 実装希望の機能
 ・管理者のみがアクセスできるページ（帳票の種類、帳票の情報、ユーザー登録画面）の作成と遷移の設定
 
-・１種類づつ数値の登録を行っている仕様を、一括登録できる機能
+・1種類づつ数値の登録を行っている仕様を、一括登録できる機能
 
 ・カレンダー形式で、在庫変動を一覧化
 
@@ -77,8 +79,9 @@ Ruby on Rails
 
 # ローカルでの動作方法
 
+
 # 工夫したポイント
-現在の在庫数がわかりやすい点。
+現在の在庫数の確認がしやすく、入力画面も分かりやすくなっています。
 
 
 # テーブル設計
