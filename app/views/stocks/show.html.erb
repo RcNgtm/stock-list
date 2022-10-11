@@ -1,30 +1,29 @@
 <div class='form_wrapper'>
-  <div>
+  <div class='report-info'>
     <span class='<%= product_color(@report) %> btn'><%= @report.product %></span>
     <span class='report btn'><%= @report.detail.reportname %></span>
   </div>
   <div>
     現在の在庫数：<%= @sum_stocks[@report.id] %>
   </div>
-    <%= form_with model: @stock, local: true, class:'input_form' do |f| %>
+    <%= form_with model: @stock, local: true, class:'input_form', id:'form' do |f| %>
       <div class='form'>
-        <%= f.label :moveday, "変動日" ,class: 'form_left'%>
-        <%= f.date_field :movedate, autofocus: true %>
+        <%= f.label :movedate, "変動日" ,class: 'form_left'%>
+        <%= f.date_field :movedate, autofocus: true, required: true %>
       </div>
       <div class='form'>
-        <%= f.label :number, "変動数" ,class: 'form_left'%>
-        <%= f.number_field :num, autofocus: true, class:'form_right_upper'%>
+        <%= f.label :num, "変動数" ,class: 'form_left'%>
+        <%= f.number_field :num, autofocus: true, placeholder: "半角で数値を入力", class:'form_right_upper', required: true %>
       </div>
-      <div class= 'form_right'>数値は半角で入力してください</div>
         <%= f.hidden_field :report_id, value: @report.id %>
       <div class='submit_btn'>
-        <%= f.submit "保存する",class: 'stock_right' %>
+        <%= f.submit "保存する",class: "stock_right", id: "button" %>
       </div>
     <% end %>
 
   <%# <div>月別変動数
     <%= month_calendar do |date| %>
-      <%# <%= date.day %><br>
+      <%# <%= date.day %>
       <%# 変動数入れたい %>
     <%# <% end %> 
   <%# </div> %>

@@ -101,6 +101,7 @@ a {
   background: #fffbf9;
   border: 2px solid #c9ac99;  
 }
+
 .stock_right:hover {
   border: none;
   background: #c9ac99;
@@ -113,13 +114,14 @@ a {
   margin: auto;
   text-decoration: none;
   user-select: none;  
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
-
+.report-info{
+  margin-bottom: 1em;
+}
 .input_form {
   width: 400px;
 }
-
 .form {
   margin: 0.7em 0;
   display: flex;
@@ -129,13 +131,13 @@ a {
 .form_left{
   margin-right: 1em;  
 }
-.form_right_upper{
-  position:relative;
-}
 .form_right {
 }
 .submit_btn {
   margin-top: 1em;
+}
+.disabled {
+  pointer-events: none;
 }
 /* devise */
 .field {
