@@ -1,8 +1,10 @@
 <div>
   <div class='inner'>
-    使用者：<%= current_user.name %>さん
-    <% @reports.each do |report| %>
-      <%= render partial: "report", locals: { report: report }%>
-    <% end %>
+    <%= current_user.name %>さん
+    <div class='report-list'>
+      <% @reports.each do |report| %>
+        <%= render partial: "report", locals: { report: report }%>
+      <% end %>
+    </div>
   </div>
 </div>

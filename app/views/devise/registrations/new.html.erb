@@ -1,5 +1,5 @@
 <div class='form_wrapper'>
-  <h2>Sign up</h2>
+  <h3>使用者の新規登録</h3>
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -16,7 +16,7 @@
     <div class="field">
       <%= f.label :password %>
       <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      (<%= @minimum_password_length %>文字以上の英数字)
       <% end %><br />
       <%= f.password_field :password, autocomplete: "new-password" %>
     </div>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign up" , class: 'stock_right'%>
+      <%= f.submit "新規登録" , class: 'stock_right'%>
     </div>
   <% end %>
 </div>
