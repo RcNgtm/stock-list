@@ -50,6 +50,10 @@ a {
   justify-content:space-between;
   align-items: center;
 }
+.header_link {
+  font-size: 0.8em;
+  margin-left: 1em;
+}
 /* トップページ */
 .btn{
   display: inline-block;

@@ -15,7 +15,9 @@
         <h3 class="header_left"><a href="/">在庫リスト</a></h3>
         <div class="header_right">
           <% if user_signed_in? %>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            <%= link_to "帳票情報登録", new_report_path, class: 'header_link' %>
+            <%= link_to "新規ユーザー登録", new_user_registration_path, class: 'header_link' %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'header_link' %>
           <% end %>
         </div>
       </div>
