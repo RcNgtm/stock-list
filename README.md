@@ -16,11 +16,11 @@ pw:
 app
 
 # テスト用アカウント
-email:
+Email:
 test_1@test.ad
 
-pw:
-testtest1
+Password:
+test1test1
 
 # 利用方法
 ① ログイン（ログイン必須の仕様となっています。）
