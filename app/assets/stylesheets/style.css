@@ -33,7 +33,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #543f32;
+  color: #7c5b4e;
 }
 
 /* ヘッダー */
@@ -68,9 +68,15 @@ a {
 .bg_green {
   background-color: #cffae5;
 }
+.bg_brown {
+  background-color: #d8b3a0;
+}
+.bg_purple {
+  background-color: #b196d5;
+}
 .report {
   background-color: #c2b2a8;
-  font-size: 0.6em;
+  font-size: 0.65em;
 }
 .inner {
   width: 40em;
@@ -104,16 +110,16 @@ a {
 .inner_right {
   color: #6f5240;
 }
-.stock_right {
+.submit_btn {
   padding: 0.4em 1.5em;
   font-size: 0.7em;
   transition: 0.4s ease;
-  margin-right: 1em;
+  margin-right: 1em 1em 0 0;
   background: #fffbf9;
   border: 2px solid #c9ac99;  
 }
 
-.stock_right:hover {
+.submit_btn:hover {
   border: none;
   background: #c9ac99;
 }
@@ -144,12 +150,24 @@ a {
 }
 .form_right {
 }
-.submit_btn {
-  margin-top: 1em;
-}
+
 .disabled {
   pointer-events: none;
 }
+
+/* 帳票情報 */
+.report_input {
+  margin-bottom: 1em;
+}
+.report_select {
+  margin-left: 0.5em;
+}
+.detail_link {
+  font-size: 0.7em;
+  display: block;
+  margin-left: 1em;
+}
+
 /* devise */
 .field,.actions{
   margin: 1em 0;

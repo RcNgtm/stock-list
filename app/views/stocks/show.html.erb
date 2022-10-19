@@ -16,8 +16,8 @@
         <%= f.number_field :num, autofocus: true, placeholder: "半角で数値を入力", class:'form_right_upper', required: true %>
       </div>
         <%= f.hidden_field :report_id, value: @report.id %>
-      <div class='submit_btn'>
-        <%= f.submit "保存する",class: "stock_right", id: "button" %>
+      <div>
+        <%= f.submit "保存する", class: "submit_btn", id: "button" %>
       </div>
     <% end %>
 

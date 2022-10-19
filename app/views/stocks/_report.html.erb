@@ -8,7 +8,7 @@
       現在の在庫数：<%= @sum_stocks[report.id] %>
     </div>
   </div>
-  <div class='stock_right'>
-    <%= link_to "入力する", stock_path(report.id)%>
+  <div>
+    <%= link_to "入力する", stock_path(report.id), { class: "submit_btn" } %>
   </div>
 </div>
