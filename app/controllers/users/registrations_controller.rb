@@ -9,12 +9,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def new
     super
     puts '========================='
-    puts 'GET /resource/sign_in'
+    puts 'GET /resource/sign_up'
     puts '========================='
   end
 
-  def after_sign_up_path_for(_resource)
-    companies_articles_path(リダイレクト先のpath)
+  def after_sign_up_path_for_users
+    root_path
   end
 
   # POST /resource
@@ -50,6 +50,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name]) 
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:admin]) 
     devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])
   end
 
