@@ -4,7 +4,7 @@
       <div>
       ・登録する帳票の種類を選択してください
         <% if current_user.admin? %>
-          <%= link_to "▶︎帳票の種類を追加する場合はここをクリック", new_report_path, {class: 'detail_link'} %>
+          <%= link_to "▶︎帳票の種類を追加する場合はここをクリック", new_detail_path, {class: 'detail_link'} %>
         <% end %>
       </div>
       <% @data.each do |data| %>

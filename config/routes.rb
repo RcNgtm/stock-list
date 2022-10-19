@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'stocks#index'
   resources :stocks
   resources :reports, only: [:index, :new, :create]
+  resources :details, only: [:index, :new, :create]
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions'
