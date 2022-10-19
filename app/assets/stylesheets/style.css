@@ -62,17 +62,17 @@ a {
   padding: 0.4em 1.5em;
   font-size: 0.7em;
 }
-.bg_pink {
-  background-color: #f8d6f8;
-}
-.bg_green {
-  background-color: #cffae5;
-}
 .bg_brown {
   background-color: #d8b3a0;
 }
 .bg_purple {
   background-color: #b196d5;
+}
+.bg_pink {
+  background-color: #f8d6f8;
+}
+.bg_green {
+  background-color: #cffae5;
 }
 .report {
   background-color: #c2b2a8;
