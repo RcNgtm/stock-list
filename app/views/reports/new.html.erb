@@ -2,7 +2,7 @@
   <%= form_with model: @report, local: true do |f| %>
     <div class='report_input'>
       <div>
-      ・登録する帳票の種類を選択してください
+      登録する帳票の種類を選択
         <% if current_user.admin? %>
           <%= link_to "▶︎帳票の種類を追加する場合はここをクリック", new_detail_path, {class: 'detail_link'} %>
         <% end %>
@@ -18,7 +18,7 @@
 
 
     <div class='report_input'>
-      <p>・登録する商品名を選択してください</p>
+      <p>登録する商品名を選択</p>
       <%= f.select :product, [["医療保険", "医療"], ["緩和医療保険", "緩和医療"], ["定期保険", "定期"], ["緩和定期保険", "緩和定期"]], include_blank: "選択して下さい"  %>
     </div>
     <%= f.submit '送信', class: "submit_btn"%>

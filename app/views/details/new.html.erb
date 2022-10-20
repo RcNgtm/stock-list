@@ -1,3 +1,20 @@
-<div>これから実装予定</div>
+<div class='inner'>
+  <%= form_with model: @detail, local: true do |f| %>
+    <div class='report_input'>
+    <%= f.label  '帳票の種類' %><br>
+    <%= f.text_field :reportname, autofocus: true,  required: true %>
+    </div>
+    
+    <div class='report_input'>
+    <%= f.label  '発注目安在庫数' %><br>
+    <%= f.number_field :deadline, required: true, placeholder:'半角で数値を入力' %>
+    </div>
 
-<%= link_to "戻る", new_report_path %>
+    <div class='report_input'>
+    <%= f.submit  "保存する", class: "submit_btn", id: "button" %>
+    </div>
+  <% end %>
+
+  <%= link_to "戻る", new_report_path, {class: "submit_btn"} %>
+</div>
+

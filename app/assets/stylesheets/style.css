@@ -116,7 +116,8 @@ a {
   transition: 0.4s ease;
   margin-right: 1em 1em 0 0;
   background: #fffbf9;
-  border: 2px solid #c9ac99;  
+  border: 2px solid #c9ac99;
+  width: 8em;
 }
 
 .submit_btn:hover {

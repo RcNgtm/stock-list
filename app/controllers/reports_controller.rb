@@ -10,14 +10,14 @@ class ReportsController < ApplicationController
   end
 
   def create
-    Report.create!(stock_params)
+    Report.create!(report_params)
     redirect_to root_path
   end
 
 
   private
 
-  def stock_params
+  def report_params
     params.require(:report).permit(:product, :detail_id)
   end
 
