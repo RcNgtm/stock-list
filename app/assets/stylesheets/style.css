@@ -82,13 +82,31 @@ a {
   width: 40em;
   margin: auto;
 }
-.report-list{
+.report-list {
   margin: 1em;
+}
+
+.report_products {
+  margin-left: 1em;
+}
+
+.report_product {
+  display: inline-block;
+  text-align: center;
+  border: 0.5px solid #c9ac99;
+  padding: 0.1em 1em;
+  font-size: 0.8em;
+}
+
+.report_product:hover {
+  border: none;
+  background: #c9ac99;
 }
 
 /* 部分テンプレート内 */
 .stock_wrapper {
   height: 3em;
+  margin: auto 1em;
   text-decoration: none;
   user-select: none;
   display: flex;
@@ -104,7 +122,6 @@ a {
 .inner_left {
   display: flex;
   align-items: center;
-  margin-left: 1em;
   width: 12em;
 }
 .inner_right {
