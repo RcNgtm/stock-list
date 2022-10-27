@@ -1,14 +1,16 @@
 <div>
   <div class='inner'>
     <%= current_user.name %>さん
+
     <div class='report-list'>
+
       <div class='report_products'>
-      
-      <p class='report_product'> 医療</p>
-      <p class='report_product'> 緩和医療</p>
-      <p class='report_product'> 定期</p>
-      <p class='report_product'> 緩和定期</p>
+        <p class='report_product'> 医療</p>
+        <p class='report_product'> 緩和医療</p>
+        <p class='report_product'> 定期</p>
+        <p class='report_product'> 緩和定期</p>
       </div>
+
       <% @reports.each do |report| %>
         <%= render partial: "report", locals: { report: report }%>
       <% end %>

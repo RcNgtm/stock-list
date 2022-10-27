@@ -54,6 +54,7 @@ a {
   font-size: 0.8em;
   margin-left: 1em;
 }
+
 /* トップページ */
 .btn{
   display: inline-block;
@@ -86,6 +87,7 @@ a {
   margin: 1em;
 }
 
+/* 商品別 */
 .report_products {
   margin-left: 1em;
 }
