@@ -18,6 +18,7 @@ class StocksController < ApplicationController
   end
 
   private
+
   def stock_params
     params.require(:stock).permit(:movedate, :report_id, :num).merge(user_id: current_user.id)
   end
@@ -27,7 +28,7 @@ class StocksController < ApplicationController
   end
 
   def sum_stocks_day
-    @sum_stock_day = Stock.group(:movedate,:report_id).sum(:num)
+    @sum_stock_day = Stock.group(:movedate).sum(:num)
   end
 
 end
